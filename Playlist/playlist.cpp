@@ -106,10 +106,10 @@ class playlist : public IPlaylist
 };
 
 
-// extern "C" __declspec(dllexport) IPlaylist* __cdecl create_playlist()
-// {
-//     return new playlist;
-// }
+extern "C" __declspec(dllexport) IPlaylist* __cdecl create_playlist()
+{
+    return new playlist;
+}
 
 
 
@@ -125,30 +125,30 @@ void showlist(list<string> g)
 
 
 
-int main()
-{
-  playlist MyPlaylist;
-  MyPlaylist.add_song("hola broqui");
-  MyPlaylist.add_song("que pecs men");
-  MyPlaylist.add_song("orale mijo");
-  list<string> list1 = MyPlaylist.display();
-  showlist(list1);
-  MyPlaylist.delete_song(2);
-  list<string> list2 = MyPlaylist.display();
-  showlist(list2);
-  MyPlaylist.add_song("kkk");
-  MyPlaylist.add_song("qqq");
-  MyPlaylist.add_song("lll");
-  list<string> list3 = MyPlaylist.display();
-  showlist(list3);
-  MyPlaylist.play_now("orale mijo");
-  cout<<MyPlaylist.playing->data<<'\t';
-  MyPlaylist.play_next();
-  MyPlaylist.play_next();
-  MyPlaylist.play_previous();
-  MyPlaylist.play_previous();
-  MyPlaylist.play_previous();
+// int main()
+// {
+//   playlist MyPlaylist;
+//   MyPlaylist.add_song("hola broqui");
+//   MyPlaylist.add_song("que pecs men");
+//   MyPlaylist.add_song("orale mijo");
+//   list<string> list1 = MyPlaylist.display();
+//   showlist(list1);
+//   MyPlaylist.delete_song(2);
+//   list<string> list2 = MyPlaylist.display();
+//   showlist(list2);
+//   MyPlaylist.add_song("kkk");
+//   MyPlaylist.add_song("qqq");
+//   MyPlaylist.add_song("lll");
+//   list<string> list3 = MyPlaylist.display();
+//   showlist(list3);
+//   MyPlaylist.play_now("orale mijo");
+//   cout<<MyPlaylist.playing->data<<'\t';
+//   MyPlaylist.play_next();
+//   MyPlaylist.play_next();
+//   MyPlaylist.play_previous();
+//   MyPlaylist.play_previous();
+//   MyPlaylist.play_previous();
 
-  cout<<MyPlaylist.playing->data<<'\t';
+//   cout<<MyPlaylist.playing->data<<'\t';
 
-}
+// }
