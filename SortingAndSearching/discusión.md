@@ -33,12 +33,12 @@ Los resultados de estos benchmarking son consistentes con la tabla para todos lo
 ## Searching
 Para nuestra discusión tendremos en cuenta los algoritmos de linear search, jump search y binary search. Esta tabla nos enseña la complejidad de tiempo. 
 
-![Searching](./images/Searching.png "Searching Complexity")
+![Searching](./images/searching.png "Searching Complexity")
 
 
 Para probar los algoritmos se utiliso una lista ya ordenada. Los resultados de el benchmark no fueron completamente consistentes al repetir el benchmark varias veces. 
 
-![Searching](./images/Search.png "Searching Complexity")
+![Searching](./images/search.png "Searching Complexity")
 
 
 Como podemos ver Linear search tiene semi-consistentemente los peores tiempos. Sin embargo, Binary Search y Jump Search se pelean por el pimer y segundo lugar.   
