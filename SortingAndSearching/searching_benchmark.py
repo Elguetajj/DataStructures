@@ -12,7 +12,3 @@ def test_jump_search(benchmark):
 
 def test_binary_search(benchmark):
     benchmark(binary_search, sorted_list, search_value)
-
-
-print(binary_search(sorted_list,search_value))
-print(linear_search(sorted_list,search_value))

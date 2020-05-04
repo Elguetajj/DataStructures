@@ -22,6 +22,7 @@ def bubble_sort(unsorted: list) -> list:
 
     return unsorted
 
+
 def heapify(arr, n, i): 
     largest = i  
     left_child = 2 * i + 1    
